@@ -10,7 +10,7 @@
 Functions that load and write PEM-encoded files.
 """
 
-from adafruit_binascii import a2b_base64, b2a_base64
+from binascii import a2b_base64, b2a_base64
 
 # pylint: disable=redefined-builtin
 from adafruit_rsa._compat import is_bytes

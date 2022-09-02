@@ -22,7 +22,8 @@ to your users.
 """
 
 import os
-import adafruit_hashlib as hashlib
+import uhashlib
+import hashlib
 from adafruit_rsa import common, transform, core
 
 try:
@@ -63,10 +64,10 @@ HASH_ASN1 = {
 }
 
 HASH_METHODS = {
-    "MD5": hashlib.md5,
-    "SHA-1": hashlib.sha1,
+    "MD5": uhashlib.md5,
+    "SHA-1": uhashlib.sha1,
     "SHA-224": hashlib.sha224,
-    "SHA-256": hashlib.sha256,
+    "SHA-256": uhashlib.sha256,
     "SHA-384": hashlib.sha384,
     "SHA-512": hashlib.sha512,
 }

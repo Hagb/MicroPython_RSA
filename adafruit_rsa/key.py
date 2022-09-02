@@ -26,7 +26,7 @@ of pyasn1.
 
 """
 
-import adafruit_logging as logging
+import logging
 
 import adafruit_rsa.prime
 import adafruit_rsa.pem
@@ -49,7 +49,6 @@ __repo__ = "https://github.com/adafruit/Adafruit_CircuitPython_RSA.git"
 
 # pylint: disable=invalid-name, useless-object-inheritance, redefined-builtin, no-name-in-module, too-few-public-methods
 log = logging.getLogger(__name__)
-log.addHandler(logging.StreamHandler())
 log.setLevel(logging.INFO)
 
 DEFAULT_EXPONENT = 65537

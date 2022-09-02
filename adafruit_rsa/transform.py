@@ -15,7 +15,7 @@ From bytes to a number, number to bytes, etc.
 # from __future__ import absolute_import
 
 from struct import pack
-import adafruit_binascii as binascii
+import binascii
 
 from adafruit_rsa._compat import byte, is_integer
 from adafruit_rsa import common, machine_size
